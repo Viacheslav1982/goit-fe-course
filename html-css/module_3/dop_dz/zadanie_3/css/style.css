@@ -1,0 +1,20 @@
+.article1{
+    margin: 4px 10px 2px 0px;
+    padding: 6px;
+    border: 1px solid #CCC;
+    width: 960px;
+    vertical-align: middle;
+}
+.article1 div {
+    display: inline-block;
+}
+.text{
+    display: inline-block;
+    width: 450px;
+    font-family: 'Playfair Display', serif;
+	font-size: 16px;
+}
+.signature{
+    font-family: 'Italic', serif;
+	font-size: 12px;
+}

@@ -1,0 +1,44 @@
+	.headerNav{
+    width:900px;
+    margin:0 auto;
+	text-align: center;
+	 
+	 }  
+	 .headerNav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 50px;
+    width:20px;
+     }
+	.headerNav a {
+	text-decoration: none;
+	font-family: 'Playfair Display', serif;
+	font-size: 20px;
+}
+[href= "ONE"]{
+	color:red;
+}
+[href="TWO"]{
+	color: blue;
+}
+
+[href= "THREE"]{
+	color:purple;
+}
+
+[href= "FOUR"]{
+	color:yellow;
+}
+
+[href= "SIX"]{
+	color:gray;
+}
+#FIVE {
+	color:green;
+	font-size: 30px;
+	font-family: 'Cambria';
+	}
+.headerNav a:hover {
+	background: #0000d0;
+	color: #ffe;
+}
