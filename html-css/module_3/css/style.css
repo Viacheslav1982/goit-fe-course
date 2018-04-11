@@ -3,34 +3,41 @@
     margin:0 auto;
 	text-align: center;
 	 }  
-	 .headerNav ul li{
+.headerNav a:hover {
+	background: #0000d0;
+	color: #ffe;
+}
+ .headerNav ul li{
     list-style: none;
     display: inline-block;
     padding: 0 90px;
     width:20px;
      }
-	.headerNav a {
+.headerNav a {
 	text-decoration: none;
 	font-family: 'Playfair Display', serif;
     font-size: 14px;
      }
-    [href= "PHOTODIARY"], [href= "MUSIC"], [href= "TRAVEL"]{
+href{
         color:#626262;
     }
-    [href= "LIFESTYLE"]{
-        color:#03a9f4;
-    }
 .article1{
-    margin: 50px 0px 0px 200px;
-    padding: 0px;
+    */margin: 50px 0px 0px 200px;
+    */padding: 0px;
     border: 1px solid #CCC;
-    width: 900px;
-    vertical-align: middle;
+    */width: 900px;
+    */vertical-align: middle;
 }
-.article1 div {
+.article1 article  {
     display: inline-block;
-	margin: 0px 10px 0px 0px;
+	margin: 0px 0px 0px 125px;
 	vertical-align: middle;
+}
+.article1 article{
+	width: 420px;
+}
+.article1 article: nth-of-type(2n+1){
+	margin-right: 58px;
 }
 .text{
 	margin: 20px 10px 20px 0px;
@@ -50,8 +57,9 @@
     font-family: 'Ubuntu', sans-serif;
 }
  button{
-    margin: 30px 10px 50px 550px;
-    border: 1px solid #dddcd7;
+	margin: 20px 10px 2px 550px;
+    padding: 22px 34px;
+    border: 1px solid #626262;
     font-family: 'Playfair Display', serif;
     font-size: 20px;
 }
