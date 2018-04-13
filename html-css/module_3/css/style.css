@@ -22,21 +22,20 @@ href{
         color:#626262;
     }
 .article1{
-    */margin: 50px 0px 0px 200px;
-    */padding: 0px;
+    margin: 0px 0px 0px 200px;
+    padding: 0px;
     border: 1px solid #CCC;
-    */width: 900px;
-    */vertical-align: middle;
+    width: 900px;
+    vertical-align: middle;
 }
 .article1 article  {
     display: inline-block;
-	margin: 0px 0px 0px 125px;
 	vertical-align: middle;
 }
 .article1 article{
-	width: 420px;
+	width: 419px;
 }
-.article1 article: nth-of-type(2n+1){
+.article1 article:nth-of-type(2n+1){
 	margin-right: 58px;
 }
 .text{
