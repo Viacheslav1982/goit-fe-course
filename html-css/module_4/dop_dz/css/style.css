@@ -1,0 +1,65 @@
+ a {
+text-decoration: none;
+}
+ ul li{
+    list-style: none;
+}
+ .list1  a:hover {
+	color: rgb(56, 241, 10);
+}
+ .list1 li {
+	 height: 50px;
+	 width: 50hx;
+	 margin: 10px;
+	 padding: 10px;
+	float: left;
+ }
+.list1::after{
+	content:"";
+	display: table;
+	clear: both;
+}
+ .list2 li a{
+	 color: #0E1116;
+ }
+ .list2  a:hover {
+	color: rgb(143, 247, 7);
+ }	
+ .list2 li:nth-child(3n +1){
+    background-color: #88292F 
+}
+.list2 li:nth-child(3n -1){
+    background-color: #5DB7DE 
+}
+.list2 li:nth-child(3n ){
+    background-color: #0D5D56 
+}
+.list3 li a{
+	color: rgb(117, 250, 8);
+}
+.list3  a:hover {
+   color: rgb(247, 7, 7);
+}
+.list3 li::before {
+	margin-right: 10px;
+	content: "\2192";
+}
+.list4 li a{
+	color: rgb(13, 26, 2);
+	display: inline-block;
+	margin: 10px 10px 10px 10px;
+}
+.list4  a:hover {
+   color: rgb(40, 86, 211);
+}
+.body {
+    counter-reset:  count-list4;
+}
+.list4 li {
+	counter-increment: count-list4;
+} 
+.list4 li::before {
+	content: counter(count-list4,upper-roman);
+	margin-right: 25px;
+	border: 1px solid rgb(214, 6, 6);
+}
