@@ -1,0 +1,131 @@
+a {
+text-decoration: none;
+}
+.headerNav{
+    text-align: right;
+}
+.headerNav a:hover{
+    color: #6cbb9c;
+}
+.logo {
+    margin-top:0px 40px;
+    padding: 0px 20px; 
+    font-family: 'Roboto', sans-serif; 
+    font-size: 20px;
+    float: left;
+}
+.logo::first-letter{
+	font-size:20px;
+	color: lightgreen;
+	font-weight: bold;
+}
+.logo::after{
+	content:"";
+	display: table;
+	clear: both;
+}
+h1 {
+	margin: 50px auto;
+	text-align:center;
+	font-family: 'Roboto', sans-serif; 
+    font-size: 48px;
+	font-weight: bold;
+}
+h1:after{
+	content:url('../img/line.jpg');
+	display: block;
+}
+ ul li{
+    list-style: none;
+    display: inline-block;
+    margin-top: 0px 40px;
+    padding: 0px 20px; 
+    font-family: 'MyriadPro', sans-serif; 
+    font-size: 12px;
+	font-weight: bold;
+}
+ a {
+    color: #130202;
+    }
+.line {
+    width: 255px;
+    height:268px;
+	border: 1px solid black;
+    float: left;
+    margin-left: 30px;
+	margin: 23px;
+}
+.price{
+	float: right;
+	margin: -4px -1px;
+	width: 55px;
+    height:40px;
+    border: 1px solid black;
+	text-align:center;
+	color: #FFFFFF;
+	background: #8E8E8E;
+	font-family: 'Roboto', sans-serif; 
+    font-size: 18px;
+	font-weight: bold;
+}
+.name{
+    float: left;
+	width: 198px;
+    height:40px;
+    border: 1px solid black;
+	margin: -4px 0;
+	color: #FFFFFF;
+	background: #353535;
+	font-family: 'Roboto', sans-serif; 
+    font-size: 18px;
+	font-weight: bold;
+	}
+.line:hover{
+	cursor: pointer;	
+}
+.line:hover .name{
+	background: #1abc9c;
+}
+.line:hover .price{
+	background: #7fd9c7;
+}
+.shop::after{
+	content:"";
+	display: table;
+	clear: both;
+}
+.foto {
+	float: left;
+    margin: 30px;
+	width: 325px;
+    height:250px;
+}
+.text {
+    float: left;
+	width: 325px;
+    height:250px;
+   }
+.signature:after{
+	content:url('../img/line2.jpg');
+	display: block;
+}
+.signature1{
+	padding: 20px 0px;
+	font-family: 'OpenSans', sans-serif; 
+    font-size: 14px;
+}
+.signature{
+	font-family: 'OpenSans', sans-serif; 
+    font-size: 18px;
+	font-weight: bold;
+}
+button{
+	width: 160px;
+    height:50px;
+    border: 1px solid #626262;
+    font-family: 'OpenSans Light', serif;
+    font-size: 16px;
+	color:#F9FCFB;
+	background: #6CBB9C;
+	border-radius: 5px;
+}
