@@ -1,3 +1,11 @@
+header{
+	
+	margin:0 auto;
+}
+main{
+	
+	margin:0 auto;
+}
 a {
 text-decoration: none;
 }
@@ -44,9 +52,12 @@ h1:after{
     font-size: 12px;
 	font-weight: bold;
 }
- a {
+ li.navy a{
     color: #130202;
     }
+ li.active a{
+	 color: #6CBB9C;
+ }
 .line {
     width: 255px;
     height:268px;
@@ -73,7 +84,7 @@ h1:after{
 	width: 198px;
     height:40px;
     border: 1px solid black;
-	margin: -4px 0;
+	margin: -4px -1px;
 	color: #FFFFFF;
 	background: #353535;
 	font-family: 'Roboto', sans-serif; 
@@ -95,10 +106,12 @@ h1:after{
 	clear: both;
 }
 .foto {
+	margin: 30px;
 	float: left;
-    margin: 30px;
-	width: 325px;
-    height:250px;
+    width: 350px;
+}
+.foto:not(:nth-of-type(3n+3)){
+	margin-right:30px;
 }
 .text {
     float: left;
