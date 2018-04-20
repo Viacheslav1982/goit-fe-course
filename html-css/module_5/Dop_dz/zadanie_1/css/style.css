@@ -1,0 +1,18 @@
+
+ main {
+    position: relative; 
+ }
+ .foto {
+    width: 1300px;
+    height: 800px;
+    background-image: url('../img/foto1.jpg');
+    position: absolute;
+    z-index: 2;
+}
+  .gradient {
+    width: 1300px;
+    height: 800px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(41, 137, 216, 0.3));
+    z-index: 3;
+    position: absolute;
+}

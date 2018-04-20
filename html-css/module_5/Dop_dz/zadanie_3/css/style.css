@@ -1,0 +1,49 @@
+body {
+	min-height: 100hv;
+	background-image: url('../img/foto1.jpg');
+}
+
+.menu {
+	list-style: none;
+	text-align: center;
+	
+}
+a {
+text-decoration: none;
+color:rgb(8, 17, 122);
+}
+.menu_item{	
+	display: inline-block;
+	position:relative;	
+}
+.menu_item > a, .submenu_item > a{
+	display: inline-block;
+	margin-top: 0px 40px;
+    padding: 0px 20px; 
+    font-family: 'MyriadPro', sans-serif; 
+    font-size: 12px;
+	font-weight: bold;
+	color:rgb(8, 17, 122);
+}
+.submenu{
+	list-style: none;
+	display: none;
+	position: absolute;
+	top:100%;
+	left: 0;
+	background-color: #BBBBAC;
+	box-shadow: 0 2px 2px 2px rgba(0,0,0,0.3)
+}
+.menu_item:hover> .submenu{
+	display: block;
+}
+.menu_item{
+	white-space: nowrap;
+}
+
+.menu_item > a:hover, 
+.submenu_item > a:hover{
+	background: #868790;
+	color:#F4F577;
+}
+
