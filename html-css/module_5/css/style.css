@@ -1,0 +1,256 @@
+main{
+	max-width:1600px;
+	 margin:0 auto;
+}
+a { 
+    text-decoration: none;
+    }
+.logo {
+	max-width:1600px;
+	margin-left: 245px;
+    padding: 0px 100px; 
+    font-family: 'Roboto', sans-serif; 
+    font-size: 30px;
+    float: left;
+	text-transform: uppercase;
+}
+.logo::first-letter{	
+	color: #1abc9c;
+	font-weight: bold;
+}
+.logo::after{
+	content:"";
+	display: table;
+	clear: both;
+}
+.wrapper{
+	width: 1170px;
+	margin:0 auto;
+}
+.mainmenu{
+	float: right;
+}
+.mainmenu ul{
+	width: 600px;
+    text-align: justify;
+}
+.mainmenu a:hover{
+    color: #6cbb9c;
+}
+.mainmenu ul li {
+    list-style: none;
+    text-transform: uppercase;
+    font-family: 'OpenSans', sans-serif; 
+    font-size: 14px;
+    font-weight: bold;
+    color: #0f0101;
+    line-height: 11px;
+	display: inline;
+	text-align: right;	
+	margin-right:30px;
+}
+ li.navy a{
+    color: #140303;
+    }
+ li.active a{
+	 color: #6cbb9c;
+ }
+.clearfix::after{
+	content:"";
+	display: table;
+	clear: both;
+}
+*{
+	box-sizing:border-box;
+}
+.slider{
+    min-height: 599px;
+    background-image: url('../img/fon_slide.jpg');
+	background-size: cover;
+	text-align: center;
+	position: relative;
+	margin-top:37px;
+}
+.slider:before{
+	content:"";
+	position: absolute;
+	z-index:1;
+	background-color:#000000;
+	opacity:0.52;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+}
+.slider-block{
+	display:inline-block;
+	position:relative;
+	margin-top:205px;
+}
+.textslide{
+	font-family:'Roboto Black', sans-serif; 
+	font-size: 60px;
+	color: #FFFFFF;
+	font-weight:900;
+	line-height:82px;
+	text-align: left;
+	margin: 0px;
+}
+.tips{
+	font-family:'Roboto Light', sans-serif; 
+	color:#FFFFFF;
+	font-size: 24px;
+	text-align: left;
+}
+.lt{
+	background-color: rgba(78, 198, 171, 0.65);
+	width: 104px;
+	height: 104px;
+	border: 0;
+}
+.lt{
+	position:absolute;
+	left:-180px;
+	top:15px;
+}
+.rt{
+	background-color: rgba(78, 198, 171, 0.65);
+	width: 104px;
+	height: 104px;
+	border: 0;
+}
+.rt{
+	position:absolute;
+	right:-180px;
+	top:15px;
+}
+.collection{
+	margin: 50px auto;
+	text-align:center;
+	font-family: 'Roboto', sans-serif; 
+    font-size: 48px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color:#525252;
+}
+.collection:after{
+	content:url('../img/line.jpg');
+	display: block;
+}
+.shop{
+	max-width:1600px;
+	margin-left: 245px;
+}
+.shop_item {
+    width: 255px;
+   	border: 1px solid black;
+    float: left;
+	margin-bottom:30px;
+	margin-right:30px;
+	position:relative;
+}
+.price{
+	float: right;
+	margin: -4px -1px;
+	width: 55px;
+    height:40px;
+    border: 1px solid black;
+	text-align:center;
+	color: #FFFFFF;
+	background: #8E8E8E;
+	font-family: 'Roboto', sans-serif; 
+    font-size: 18px;
+	font-weight: bold;
+}
+.name{
+    float: left;
+	width: 200px;
+    height:40px;
+    border: 1px solid black;
+	margin: -4px -1px;
+	color: #FFFFFF;
+	background: #353535;
+	font-family: 'Roboto', sans-serif; 
+    font-size: 18px;
+	font-weight: bold;
+	}
+.rct{
+	display:inline-block;
+	border-width:1px;
+	border-color:#ffffff;
+	border-style: solid;
+	width: 48px;
+    height:48px;
+	line-height: 59px;
+	margin-top:100px;
+	margin-right:10px;
+}
+.rct:nth-child(3n -1) {
+	background-color: #6CBA9C;	
+}
+.hov{
+	position:absolute;
+	top:10px;
+	left:10px;
+	width:235px;
+	height:262px;
+	background-color: rgba(100, 100, 100, 0.5);
+	display:none;
+	text-align:center;
+}
+.shop_item:hover .hov{
+	display:block;
+}
+.hov:hover{
+	cursor: pointer;
+}
+.shopping_basket{
+	position:absolute;
+	border-width:1px;
+	border-color:#ffffff;
+	border-style: solid;
+	width: 172px;
+    height:50px;
+	background: #353535;
+	float:right;
+	margin-left:26px;
+	margin-top: 10px;
+}
+.text1_img{
+	margin-right:20px;
+}
+.text1{
+	color:#ffffff;
+	text-transform: uppercase;
+	font-family: 'OpenSans', sans-serif;
+	font-size: 14px;
+	margin: 5px;
+	text-align:center;
+}
+.shop_item:hover{
+	cursor: pointer;	
+}
+.shop_item:hover .name{
+	background: #1abc9c;
+}
+.shop_item:hover .price{
+	background: #7fd9c7;
+}
+.shop::after{
+	content:"";
+	display: table;
+	clear: both;
+}
+footer{
+	display: block;
+	text-align:center;
+	background-color: #353535;
+	font-family: 'OpenSans', sans-serif; 
+	font-size: 16px;
+	color:#FEFEFE;
+	padding: 40px 0px; 
+}
+.colortext{
+	color: #A5D2C1;
+}
+
