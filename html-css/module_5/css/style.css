@@ -124,6 +124,11 @@ a {
 	right:-180px;
 	top:15px;
 }
+.shop{
+	max-width:1600px;
+	text-align:center;
+	background-color:#e9f0fd;
+}
 .collection{
 	margin: 50px auto;
 	text-align:center;
@@ -137,16 +142,13 @@ a {
 	content:url('../img/line.jpg');
 	display: block;
 }
-.shop{
-	max-width:1600px;
-	margin-left: 245px;
-}
 .shop_item {
     width: 255px;
    	border: 1px solid black;
     float: left;
 	margin-bottom:30px;
 	margin-right:30px;
+	left: 245px;
 	position:relative;
 }
 .price{
@@ -174,20 +176,6 @@ a {
     font-size: 18px;
 	font-weight: bold;
 	}
-.rct{
-	display:inline-block;
-	border-width:1px;
-	border-color:#ffffff;
-	border-style: solid;
-	width: 48px;
-    height:48px;
-	line-height: 59px;
-	margin-top:100px;
-	margin-right:10px;
-}
-.rct:nth-child(3n -1) {
-	background-color: #6CBA9C;	
-}
 .hov{
 	position:absolute;
 	top:10px;
@@ -204,17 +192,37 @@ a {
 .hov:hover{
 	cursor: pointer;
 }
+.icon_img{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}	
+.rct{
+	display:inline-block;
+	border-width:1px;
+	border-color:#ffffff;
+	border-style: solid;
+	width: 48px;
+    height:48px;
+	line-height: 59px;
+	margin-bottom: 10px;
+}
+.rct:nth-child(3n -1) {
+	background-color: #6CBA9C;	
+}
+.rct:not(:nth-of-type(3)){
+	margin-right:9px;
+}
 .shopping_basket{
-	position:absolute;
 	border-width:1px;
 	border-color:#ffffff;
 	border-style: solid;
 	width: 172px;
     height:50px;
 	background: #353535;
-	float:right;
-	margin-left:26px;
-	margin-top: 10px;
+	display: block;
+	margin:0 auto;
 }
 .text1_img{
 	margin-right:20px;
