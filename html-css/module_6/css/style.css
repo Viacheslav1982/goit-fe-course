@@ -1,0 +1,30 @@
+*{
+	max-width:1200px;
+	margin:0px auto;
+	padding:0px auto;
+}
+a { 
+    text-decoration: none;
+}
+.wrapper{
+	flex-wrap: nowrap;
+}
+ul {
+list-style: none;
+display: flex;
+justify-content: space-between;
+}
+.amazing_services{
+display: flex;
+justify-content: space-between;
+width: 1148px;
+height: 419px;
+}
+.services{
+	width: 390px;
+    height: 178px;
+}
+.we{
+	display: flex;
+	align-self: center;
+}
