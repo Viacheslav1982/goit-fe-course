@@ -86,6 +86,7 @@ a {
 	display:inline-block;
 	position:relative;
 	margin-top:205px;
+	z-index: 1;
 }
 .textslide{
 	font-family:'Roboto Black', sans-serif; 
@@ -128,9 +129,10 @@ a {
 	max-width:1600px;
 	text-align:center;
 	background-color:#e9f0fd;
+	padding-top:50px;
 }
 .collection{
-	margin: 50px auto;
+	margin: 0 auto 50px;
 	text-align:center;
 	font-family: 'Roboto', sans-serif; 
     font-size: 48px;
@@ -142,14 +144,19 @@ a {
 	content:url('../img/line.jpg');
 	display: block;
 }
+.shop_items{
+	max-width:1111px;
+	margin: 0 auto;
+}
 .shop_item {
     width: 255px;
    	border: 1px solid black;
     float: left;
 	margin-bottom:30px;
-	margin-right:30px;
-	left: 245px;
 	position:relative;
+}
+.shop_item:not(:last-of-type){
+	margin-right:30px;
 }
 .price{
 	float: right;
@@ -197,6 +204,9 @@ a {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%,-50%);
+}
+.rct:hover{
+    background-color: #6CBA9C;
 }	
 .rct{
 	display:inline-block;
@@ -207,9 +217,6 @@ a {
     height:48px;
 	line-height: 59px;
 	margin-bottom: 10px;
-}
-.rct:nth-child(3n -1) {
-	background-color: #6CBA9C;	
 }
 .rct:not(:nth-of-type(3)){
 	margin-right:9px;
