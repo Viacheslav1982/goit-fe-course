@@ -1,0 +1,6 @@
+.wrapper{
+    width: 900px;
+    display:flex;
+    justify-content: space-between;
+    flex-flow:wrap row;
+}
