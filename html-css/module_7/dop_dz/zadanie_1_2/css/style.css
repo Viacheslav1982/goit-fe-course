@@ -1,0 +1,42 @@
+table{
+    border:1px solid #070707;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+caption{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.tab{
+    border-collapse: collapse;  
+}
+td{
+    border:1px solid #070707; 
+ }
+ .upper{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: start;
+ }
+th::first-letter{
+    text-transform: uppercase;
+}
+th{
+	font-size: 20px;
+	font-weight: 400;
+}
+.head{
+    background-color:#070707;
+    color: azure;
+}
+.big{
+ text-transform: uppercase;
+}
+.interactive_map{
+    text-align: center;
+}
+
+
