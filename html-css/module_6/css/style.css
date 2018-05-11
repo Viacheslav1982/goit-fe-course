@@ -17,8 +17,29 @@
 }
 .mainmenu a:hover{
 	color: #f38181;
-	content:url('../img/line2.png');
+	/*content:url('../img/line2.png');
+	display: block;*/
+}
+.mainmenu a{
+	position:relative;
+}
+.mainmenu a::before{
+	position:absolute;
+	content:"";
+	width:100%;
+	bottom:-5px;
+	left:0;
+	height:3px;
+	background:#f38181;
 	display: block;
+	visibility:hidden;
+	opacity:0;
+	transition: 2s linear;
+}
+.mainmenu .active a::before{
+	visibility:visible;
+	opacity:1;
+	transform:translateY(10px);
 }
 a { 
 	text-decoration: none;
@@ -142,6 +163,7 @@ a {
 	top: 0;
 	left: 0;
 	opacity: 0.9;
+	z-index: 1;
 }
 .hov:hover{
 	cursor: pointer;
@@ -185,15 +207,13 @@ a {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%,-50%);
+	width:254px;
 }
 .rct:hover{
     background-color:#95e1d3;
 }	
 .rct{
 	line-height: 60px;
-	border-width:1px;
-	border-color:#ffffff;
-	border-style: solid;
 	width: 60px;
     height:56px;
 	background-color: #fce38a;
