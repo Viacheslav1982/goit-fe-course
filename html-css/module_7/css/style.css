@@ -1,0 +1,213 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	max-width: 1400px;
+}
+.wrapper{
+	display:flex;
+	flex-flow:row wrap;
+	justify-content: space-between;
+	max-width: 940px;
+	margin:0 auto;
+}
+.logo{
+	font-family: 'Aclonica', sans-serif;
+	color:#fed136;
+	font-size: 26px;
+	line-height: 41px;
+}
+.logo::first-letter{
+	text-transform: uppercase;
+}
+.mainmenu a:hover{
+	color: #fed136;
+}
+a { 
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif; 
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #222222;
+}
+.serv_text{
+	margin: 30px auto;
+	text-align:center;
+	color: #333333;
+}
+.s_text{
+	font-family: Montserrat;
+	color:#222222;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 75px;
+	text-transform: uppercase;
+}
+.proin_text{
+	font-family: DroidSerif;
+	color:#777777;
+	font-size: 16px;
+	font-style: italic;
+}
+.proin_text::first-letter{
+	text-transform: uppercase;
+}
+ul {
+	display:flex; 
+	list-style: none;
+	width: 485px;
+	justify-content: space-between;
+}
+.list_services{
+	display: flex;
+	width: 940px;
+	margin:0 auto;
+	justify-content: space-evenly;
+	text-align:center;
+}
+
+.signature{
+	font-family: Montserrat;
+	color:#222222;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 75px;
+}
+.signature1{
+	font-family: 'Roboto Slab';
+	color:#777777;
+	font-size: 14px;
+	font-weight: 400;
+}
+.capital_letter{
+	text-transform:uppercase;
+}
+.contact_text{
+	margin: 30px auto;
+	text-align:center;
+	color: #333333;
+}
+.c_us_text{
+	font-family: Montserrat;
+	color:#ffffff;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 75px;
+	text-transform: uppercase;
+}
+.contact{
+	background-color:#222222;
+	max-width: 1400px;
+	height: 676px;
+	text-align: center;
+	padding-top:30px;
+	margin-top: 235px;
+	background-image: url(../img/Map_Image.png);
+}
+.info{
+	display: flex;
+	width: 940px;
+	margin:0 auto;
+	justify-content: space-between;
+	align-items:flex-start;
+	flex-flow:row wrap;
+}
+.inp_data{
+	display: inline-flex;
+    flex-direction:column;
+    justify-content: space-around;  
+    align-items:flex-start;
+}
+input:required:invalid{
+	background:rgb(12, 12, 12);
+	
+}
+
+input:required:valid{
+	background:green;
+	
+}
+input:valid{
+    box-shadow: green;
+}
+input:invalid{
+    box-shadow: red;
+}
+.t_area{
+	display: inline-flex;
+    flex-direction:column;
+	width:455px;
+	height:210px;
+}
+input{
+	width:455px;
+	height:54px;
+	margin-top: 30px;
+	font-family: Montserrat;
+	color:#bbbbbb;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-radius: 10px;
+}
+textarea{
+	font-family: Montserrat;
+	color:#bbbbbb;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+input[type="submit"]{
+	width:244px;
+	height:70px;
+	margin-left:-150px;	
+	font-family: Montserrat;
+	color:#ffffff;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+	border-radius: 3px;
+	background-color:#fed136;
+	padding-top: 20px;
+	padding-bottom: 20px; 
+}
+  @font-face {
+	font-family: 'Aclonica';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Aclonica Regular'), local('Aclonica-Regular'),
+		 url('../fonts/aclonica-v8-latin-regular.woff2') format('woff2'),
+		 url('../fonts/aclonica-v8-latin-regular.woff') format('woff'); 
+  }
+  @font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Montserrat Regular'), local('Montserrat-Regular'),
+		 url('../fonts/montserrat-v12-latin-regular.woff2') format('woff2'), 
+		 url('../fonts/montserrat-v12-latin-regular.woff') format('woff');
+  }
+  @font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Montserrat Bold'), local('Montserrat-Bold'),
+		 url('../fonts/montserrat-v12-latin-700.woff2') format('woff2'),
+		 url('../fonts/montserrat-v12-latin-700.woff') format('woff'); 
+  }
+  @font-face {
+	font-family: "DroidSerifItalic";
+	src: url("../fonts/DroidSerifItalic.woff") format("woff");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Roboto Slab';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
+		 url('../fonts/roboto-slab-v7-latin-regular.woff2') format('woff2'), 
+		 url('../fonts/roboto-slab-v7-latin-regular.woff') format('woff'); 
+  }
