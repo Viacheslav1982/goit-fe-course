@@ -1,0 +1,231 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	width: 320px;
+	text-align:center;
+	margin:0 auto;
+}
+.mainmenu{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-around;
+	text-align:center;
+}
+a { 
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif; 
+	font-size: 14px;
+	font-weight: 700;
+	color: #FFFFFF;
+}
+ul {
+	display:flex; 
+	list-style: none;
+	width: 320px;
+	justify-content: space-around;
+	margin-top:30px;
+}
+.urlaub {
+	background-image: url(../img/SmartObject_320.jpg);
+	background-repeat: no-repeat;
+	background-position: 100%;
+	height: 540px;
+}
+.mainmenu a:hover{
+	border: 4px solid #FFFFFF;
+    border-radius: 20px;
+	padding: 7px;
+}
+.capital_letter{
+	text-transform:uppercase;
+}
+.cap1_text, .cap2_text, .cap3_text{
+	text-transform:uppercase;
+}
+.btn_1::first-letter{
+	text-transform:uppercase;
+}
+.btn_2::first-letter{
+	text-transform:uppercase;
+}
+.cap4_text::first-letter{
+	text-transform:uppercase;
+}
+.cap5_text::first-letter{
+	text-transform:uppercase;
+}
+.cap5_text{
+	margin-top:70px;
+	margin-bottom: 20px;
+	font-family: Montserrat;
+	color:#333333;
+	font-size:22px;
+	font-weight: 700;
+}
+.cap1_text{
+	margin-top:130px;
+	margin-bottom:40px;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif; 
+	color:#FFFFFF;
+	font-weight: 700;
+}
+.cap4_text{
+	margin-bottom:20px;
+	color:#EFEAE4;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+}
+.cap2_text, .cap3_text{
+	font-family: 'Montserrat', sans-serif; 
+	color:#FFFFFF;
+	font-weight: 700;
+	font-size: 30px;
+}
+.btn_1{
+	width: 284px;
+    height:41px;
+    font-family: 'Montserrat', sans-serif; 
+	font-size: 14px;
+	font-weight: 700;
+	color:#FFFFFF;
+	background-color: #DE4F51;
+	border-radius: 20px;
+	border: 1px;
+}
+.btn_2{
+	width: 284px;
+    height:41px;
+    font-family: 'Montserrat', sans-serif; 
+	font-size: 14px;
+	font-weight: 700;
+	color:#DE4F51;
+	border-radius: 20px;
+	border: 4px solid #DE4F51;
+	background-color: #FFFFFF;
+	margin-bottom: 60px;
+}
+.signature{
+	font-family: 'Montserrat', sans-serif; 
+	font-size: 14px;
+	font-weight: 700;
+	color:#333333;
+	margin-top:20px;
+}
+.signature1{
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	color:#666666;
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Montserrat Bold'), local('Montserrat-Bold'),
+		 url('../fonts/montserrat-v12-latin-700.woff2') format('woff2'),
+		 url('../fonts/montserrat-v12-latin-700.woff') format('woff'); 
+  }
+  @font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Roboto Light'), local('Roboto-Light'),
+		 url('../fonts/roboto-v18-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		 url('../fonts/roboto-v18-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  @font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Roboto'), local('Roboto-Regular'),
+		 url('../fonts/roboto-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		 url('../fonts/roboto-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+@media (min-width: 768px){
+	.container{
+		width: 768px;
+		text-align:center;
+		margin:0 auto;
+	}
+	.urlaub {
+		background-image: url(../img/Vector_Smart_Object_768.jpg);
+		background-repeat: no-repeat;
+		background-position: 100%;
+		height: 700px;
+	}
+	.urlaub{
+		display:flex;
+		flex-flow:row-reverse wrap;
+		justify-content: space-between;
+		margin:0 auto;
+	}
+	.cap1_text{
+		margin-top: 25px;
+		margin-left: 50px;
+	}
+	.urlaub_text{
+		margin-right: 150px;
+	}
+	.cap2_text, .cap3_text{
+		font-family: 'Montserrat', sans-serif; 
+		color:#FFFFFF;
+		font-weight: 700;
+		font-size: 50px;
+	}
+	.cap4_text{
+		color:#ffffff;
+		font-size: 24px;
+		font-weight: 300;
+	}
+	.list_partner{
+		display: flex;
+		flex-wrap: wrap;
+		width: 768px;
+	}
+	.icon_partner{
+		width: 257px;
+		display: flex;
+		flex-direction: column;
+		margin:0 auto;
+	}
+}
+@media (min-width: 1440px){
+	.container{
+		width: 1440px;
+		text-align:center;
+		margin:0 auto;
+	}
+	.urlaub {
+		background-image: url(../img/Vector_Smart_Object_1440.jpg);
+		background-repeat: no-repeat;
+		background-position: 100%;
+		height: 700px;
+	}
+	.urlaub_text{
+		margin-top: 0px;
+		margin-right: 480px;
+		margin-left: 480px;
+	}
+	.cap1_text{
+		margin-bottom: 0px;
+		margin-left: 250px;
+	}
+	.mainmenu{
+		margin-right: 250px;
+	}
+	.list_partner{
+		display: flex;
+		flex-wrap: wrap;
+		width: 1440px;
+		justify-content: space-between;
+		margin-bottom: 45px;
+	}
+}

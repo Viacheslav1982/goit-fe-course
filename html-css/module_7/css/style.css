@@ -2,9 +2,6 @@
 	margin:0;
 	padding:0;
 }
-body{
-	max-width: 1400px;
-}
 .wrapper{
 	display:flex;
 	flex-flow:row wrap;
@@ -99,12 +96,13 @@ ul {
 }
 .contact{
 	background-color:#222222;
-	max-width: 1400px;
 	height: 676px;
 	text-align: center;
 	padding-top:30px;
 	margin-top: 235px;
 	background-image: url(../img/Map_Image.png);
+	background-repeat: no-repeat;
+	background-position: 100% 120px;
 }
 .info{
 	display: flex;
@@ -119,6 +117,9 @@ ul {
     flex-direction:column;
     justify-content: space-around;  
     align-items:flex-start;
+}
+.e_services {
+	flex-basis: 274px;
 }
 input:required:invalid{
 	background:rgb(12, 12, 12);
