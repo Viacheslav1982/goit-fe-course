@@ -13,6 +13,7 @@ text-decoration: none;
     font-family: 'Roboto', sans-serif; 
     font-size: 20px;
     float: left;
+	text-transform: uppercase;
 }
 .logo::first-letter{
 	font-size:20px;
@@ -41,7 +42,7 @@ h1:after{
     margin-top: 0px 40px;
     padding: 0px 20px; 
     font-family: 'MyriadPro', sans-serif; 
-    font-size: 12px;
+    font-size: 14px;
 	font-weight: bold;
 }
  li.navy a{
@@ -51,16 +52,16 @@ h1:after{
 	 color: #6CBB9C;
  }
  .shop, .news_section, .baner{
-	 max-width:1100px;
+	 max-width:1112px;
 	 margin:0 auto;
  }
 .shop_item {
     width: 255px;
-   	border: 1px solid black;
+   	float:left;
     float: left;
-    margin-bottom: 30px;
+    margin-bottom:30px;
 }
-.shop_item:not(:nth-of-type(3n+3)){
+.shop_item:not(:nth-of-type(4n)){
 	margin-right:30px;
 }
 .price{
