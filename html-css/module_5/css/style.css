@@ -53,7 +53,7 @@ a {
     color: #140303;
     }
  li.active a{
-	 color: #6cbb9c;
+	 color: #140303;
  }
 .clearfix::after{
 	content:"";
@@ -150,8 +150,7 @@ a {
 }
 .shop_item {
     width: 255px;
-   	border: 1px solid black;
-    float: left;
+   	float: left;
 	margin-bottom:30px;
 	position:relative;
 }
@@ -161,7 +160,7 @@ a {
 .price{
 	float: right;
 	margin: -4px -1px;
-	width: 55px;
+	width: 57px;
     height:40px;
     border: 1px solid black;
 	text-align:center;

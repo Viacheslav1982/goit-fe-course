@@ -61,10 +61,12 @@ ul {
 	display: flex;
 	width: 940px;
 	margin:0 auto;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	text-align:center;
 }
-
+.visitor_data{
+	width:100%
+}
 .signature{
 	font-family: Montserrat;
 	color:#222222;
@@ -105,18 +107,15 @@ ul {
 	background-position: 100% 120px;
 }
 .info{
-	display: flex;
 	width: 940px;
 	margin:0 auto;
-	justify-content: space-between;
-	align-items:flex-start;
-	flex-flow:row wrap;
 }
 .inp_data{
-	display: inline-flex;
-    flex-direction:column;
-    justify-content: space-around;  
-    align-items:flex-start;
+	width:100%;
+	display: flex;
+    flex-flow:column wrap;
+    justify-content: space-between;  
+    height:210px;
 }
 .e_services {
 	flex-basis: 274px;
@@ -145,20 +144,25 @@ input:invalid{
 input{
 	width:455px;
 	height:54px;
-	margin-top: 30px;
 	font-family: Montserrat;
 	color:#bbbbbb;
 	font-size: 14px;
 	font-weight: 700;
 	text-transform: uppercase;
 	border-radius: 10px;
+	box-sizing:border-box;
+	
 }
 textarea{
+	height:210px;
 	font-family: Montserrat;
 	color:#bbbbbb;
 	font-size: 14px;
 	font-weight: 700;
+	width:455px;
+	display:block;
 	text-transform: uppercase;
+	align-self:flex-end;
 }
 input[type="submit"]{
 	width:244px;

@@ -125,6 +125,10 @@ ul {
 	margin-top:20px;
 	margin-bottom: 20px;
 }
+.icon_partner{
+	max-width:194px;
+	margin:0 auto;
+}
 @font-face {
 	font-family: 'Montserrat';
 	font-style: normal;
@@ -149,9 +153,7 @@ ul {
 		 url('../fonts/roboto-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
 		 url('../fonts/roboto-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
-  .icon_partner{
-	  max-width:194px;
-  margin:0 auto;}
+  
 @media (min-width: 768px){
 	.container{
 		width: 768px;
@@ -163,6 +165,7 @@ ul {
 		background-repeat: no-repeat;
 		background-position: 100%;
 		height: 700px;
+		background-size:cover;
 	}
 	.urlaub{
 		display:flex;
@@ -191,17 +194,16 @@ ul {
 	.list_partner{
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		justify-content:space-between;
 		width: 458px;
-		margin:0 auto
+		margin: 0 auto;
 	}
 	.icon_partner{
 		width: 194px;
 		display: flex;
 		flex-direction: column;
-		/*margin:0 auto;*/
 	}
-}
+
 @media (min-width: 1440px){
 	.container{
 		width: 1440px;
@@ -213,6 +215,7 @@ ul {
 		background-repeat: no-repeat;
 		background-position: 100%;
 		height: 700px;
+		background-size:cover;
 	}
 	.urlaub_text{
 		margin-top: 0px;
