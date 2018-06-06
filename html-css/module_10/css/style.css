@@ -1,0 +1,385 @@
+.main-navy{
+	display:flex;
+	flex-flow:row wrap;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin:0 auto;
+}
+
+ul {
+	display:flex; 
+	list-style: none;
+	width: 630px;
+	justify-content: space-between;
+}
+.main-header {
+	background-image: url(../img/Layer_15.png);
+	background-repeat: no-repeat;
+	background-position: 100%;
+	height: 1000px;
+	}
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
+		.main-header {
+			background-image: url(../img/Layer_15_2.png);
+			background-repeat: no-repeat;
+			background-position: 100%;
+			height: 1000px;
+	}
+	}
+a { 
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif; 
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #ffffff;
+	}
+.logo__text{
+	font-family: 'Montserrat', sans-serif;
+	color:#ffffff;
+	font-size: 30px;
+	font-weight: 700;
+	margin:0 auto;
+	font-style: italic;
+	}
+.main-menu a:hover{
+	color: #fce38a;
+	border-bottom: 4px solid #fce38a;
+   	padding-bottom: 12px;
+	text-decoration: none;
+	}
+.headers{
+	text-align:center;
+	width:800px;
+	margin:0 auto;
+	margin-top:170px;	
+}
+.headers__title{
+	font-size: 72px;
+	margin:0 auto;
+	color:#ffffff;
+	font-family: 'Kaushan Script';
+}
+.headers__subtitle{
+	font-size: 150px;
+	margin:0 auto;
+	text-transform:uppercase;
+	color:#ffffff;
+	font-family: 'Montserrat';
+	font-style: italic;
+	font-weight: 700;
+}
+.headers-btn{	
+	width: 160px;
+    height:38px;
+    font-family: 'Montserrat', sans-serif; 
+	font-size: 14px;
+	font-weight: 700;
+	color:#FFFFFF;
+	border: 3px solid #FFFFFF;
+	display: block;
+	margin: 0 auto;
+	margin-top: 100px;
+	background-color: inherit;
+	text-transform:uppercase;
+}
+.subheaders{
+	text-align:center;
+	margin:0 auto;
+	margin-top:50px;
+}
+.subheaders__title{
+	font-size: 24px;
+	margin:0 auto;
+	font-family: 'Kaushan Script';
+	color:#5C5C5C;
+	margin-bottom: 20px;
+}
+.subheaders__subtitle{
+	font-size: 30px;
+	margin:0 auto;
+	font-family: 'Montserrat', sans-serif;
+	font-style: italic;
+	font-weight: 700;
+	text-transform:uppercase;
+	
+}
+.subheaders:after{
+	content:url('../img/line1.png');
+	display: block;
+	margin-top:10px;
+}
+.type-services{
+	display: flex;
+	flex-wrap: wrap;
+	width: 1182px;
+	margin:0 auto;
+}
+.type-services__item{
+	width: 380px;
+	display: flex;
+	margin-top:65px;
+}
+.type-services__img{
+	margin-left:30px;
+	margin-right:10px;
+}
+.type-services__signature{
+	margin:0 auto;
+	text-transform:uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+}
+.type-services__signature1{
+	color:#979797;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+}
+.team-persons{
+	width: 1200px;
+	margin:0 auto;
+}
+.persone-info{
+	margin: 30px auto;
+	text-align:center;
+	color: #333333;
+}
+.team-persons{
+	display: flex;
+	flex-flow:row wrap;
+	justify-content: space-around;
+}
+.persone-info__name{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+}
+.persone-info__job{
+	font-family: 'Roboto';
+	font-style: italic;
+	font-weight: 300;
+	font-size: 15px;
+	color:#BFBFBF;
+}
+.persone{
+	width: 380px;
+	position: relative;
+}
+.persone:hover .social-menu{
+	display:block;
+}
+.social-menu{
+	position:absolute;
+	width:380px;
+	height:470px;
+	display:none;
+	text-align:center;
+	top: 0;
+	left: 0;
+	opacity: 0.9;
+	z-index: 1;
+}
+.social-menu:hover{
+	cursor: pointer;
+}
+.persone-foto::before{
+	position: absolute;
+    content: "";
+    background-color: #95e1d3;
+    width: 380px;
+    height: 470px;
+    z-index: -1;
+}
+.persone-foto .persone-foto_back::before{
+	position: absolute;
+    content: "";
+    background: linear-gradient(to top, #fce38a, #f38181);
+    width: 380px;
+    height: 470px;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.2s linear;
+}
+.persone-foto .persone-foto_back .persone-foto__img {
+    width: 380px;
+    height: 470px;
+    transition: transform 0.2s linear;
+  }
+.persone-foto:hover .persone-foto_back::before {
+    opacity: 0.9;
+    transform: translate(-10px, -10px);
+  }
+.persone-foto:hover .persone-foto__img {
+    transform: translate(-10px, -10px);
+  }
+.social-menu__icon{
+	display:flex;
+	flex-flow:row nowrap;
+	justify-content: space-around;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width:254px;
+}
+.social-icon__item:hover{
+	background-color: #f38181;
+}
+.social-icon__item{
+	background-color:#95e1d3;
+}
+.social-icon__item{
+	line-height: 60px;
+	width: 60px;
+    height:56px;
+	background-color: #fce38a;
+}
+.persone-info{
+	text-align:center;
+	margin-bottom: 110px;
+}
+.footer{
+	display: flex;
+	justify-content: space-between;
+	width: 1200px;
+	margin:0 auto;
+	border-top: 3px solid #e4e4e4;
+	padding-top: 15px;	
+}
+.footer-text__copyright{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+}
+input{
+	border-style: solid;
+    border-width: 1px;
+	border-color:#ffffff;
+	box-sizing: border-box;
+	width: 150px;
+	height: 40px;
+}
+input[type="button"]{
+	background-color:#95e1d3;
+	width: 150px;
+	height: 40px;
+	text-transform: uppercase;
+	color:#ffffff;
+	font-family: 'Montserrat', sans-serif;
+	font-style: italic;
+	font-weight: 700;
+	font-size: 14px;
+}
+input[placeholder="Your Email..."]{
+	font-family: 'Roboto';
+	font-style: italic;
+	font-weight: 300;
+	font-size: 15px;
+	color:#AEE0D2;
+	background-color: inherit;
+		
+}
+.icon{
+	width:18px;
+	height:15;
+	fill:#FFFfff;
+}
+.icon:hover{
+	fill:#fce38a;
+}
+.social-icon__svg{
+	width: 26px;
+	height: 26px;
+	fill:#D98080;
+}
+.social-icon__svg:hover{
+	fill:#FFFfff;
+}
+.subtext{
+	font-family: 'Roboto', sans-serif; 
+	color: #B2B2B2;
+	font-size: 15px;
+	font-weight: 400;
+	width: 960px;
+	text-align:center;
+	margin:0 auto;
+	margin-top:50px;
+	margin-bottom:60px;
+}
+.capital_letter, .persone-info__name{
+	text-transform:uppercase;
+}
+.headers__title::first-letter, .subheaders__title::first-letter, .type-services__signature1::first-letter, .persone-info__job::first-letter{	
+	text-transform: uppercase;
+}
+.color-text{
+	color:#D98080;
+}
+.place__text{
+	color:#CECECE;
+}
+
+/* roboto-300italic - latin */
+@font-face {
+	font-family: 'Roboto';
+	font-style: italic;
+	font-weight: 300;
+	src: local('Roboto Light Italic'), local('Roboto-LightItalic'),
+		 url('../fonts/roboto-v18-latin-300italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		 url('../fonts/roboto-v18-latin-300italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* roboto-regular - latin */
+  @font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Roboto'), local('Roboto-Regular'),
+		 url('../fonts/roboto-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		 url('../fonts/roboto-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* roboto-700 - latin */
+  @font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Roboto Bold'), local('Roboto-Bold'),
+		 url('../fonts/roboto-v18-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		 url('../fonts/roboto-v18-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* kaushan-script-regular - latin */
+@font-face {
+	font-family: 'Kaushan Script';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Kaushan Script'), local('KaushanScript-Regular'),
+		 url('../fonts/kaushan-script-v6-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		 url('../fonts/kaushan-script-v6-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+ /* montserrat-regular - latin */
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Montserrat Regular'), local('Montserrat-Regular'),
+		 url('../fonts/montserrat-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		 url('../fonts/montserrat-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* montserrat-700italic - latin */
+  @font-face {
+	font-family: 'Montserrat';
+	font-style: italic;
+	font-weight: 700;
+	src: local('Montserrat Bold Italic'), local('Montserrat-BoldItalic'),
+		 url('../fonts/montserrat-v12-latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		 url('../fonts/montserrat-v12-latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+   
