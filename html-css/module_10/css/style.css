@@ -196,6 +196,7 @@ a {
 }
 .persone-foto .persone-foto_back::before{
 	position: absolute;
+	opacity:0.9;
     content: "";
     background: linear-gradient(to top, #fce38a, #f38181);
     width: 380px;
@@ -203,6 +204,7 @@ a {
     opacity: 0;
     z-index: 1;
     transition: all 0.2s linear;
+	transform: translate(-10px, -10px);
 }
 .persone-foto .persone-foto_back .persone-foto__img {
     width: 380px;
@@ -212,6 +214,9 @@ a {
 .persone-foto:hover .persone-foto_back::before {
     opacity: 0.9;
     transform: translate(-10px, -10px);
+  }
+.persone:hover .persone-foto__img{
+	transform: translate(-10px, -10px); 
   }
 .persone-foto:hover .persone-foto__img {
     transform: translate(-10px, -10px);
