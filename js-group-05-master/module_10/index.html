@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>HomeWork Module10</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-wrapper">
+      <form class="form">
+        <label>
+          <p>Имя</p>
+          <input class="user-input js-user-input" type="text" data-text='name'>
+        </label>
+        <label>
+          <p>Возраст</p>
+          <input class="user-input js-user-input" type="text" data-text='age'>
+        </label>
+        <button class="btn" data-action = 'add'>Добавить</button>
+      </form>
+      <button class="btn" data-action = 'show-all'>Показать всех</button>
+    </div>
+      <div class="post-wrapper"></div>
+  </div>
+
+	<div class="backdrop">
+		<form class="modal form" data-id = "">
+        <label>
+          <p>Имя</p>
+          <input class="user-input js-update-input" data-input = 'name' type="text" data-text='name'>
+        </label>
+        <label>
+          <p>Возраст</p>
+          <input class="user-input js-update-input" data-input = 'age' type="text" data-text='age'>
+        </label>
+        <div class="action">
+        	<button class="btn" type = 'submit' data-action = 'save'>Сохранить</button>
+         	<button class="btn" type = 'submit' data-action = 'cancel'>Отмена</button>
+        </div>
+        
+      </form>
+	</div>
+
+  <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>
